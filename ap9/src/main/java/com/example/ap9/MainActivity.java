@@ -3,6 +3,7 @@ package com.example.ap9;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -56,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
             }
             PeopleAdapter pa = new PeopleAdapter(this,this,R.layout.item,list);
             lv.setAdapter(pa);
+        }
+    }
+
+    private class EditButonListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+
         }
     }
 }

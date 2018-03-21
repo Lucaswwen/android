@@ -3,7 +3,6 @@ package com.example.ap9;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,7 +67,6 @@ public class PeopleAdapter extends BaseAdapter {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 //发送请求
                 Intent intent = new Intent();
                 intent.setClass(PeopleAdapter.this.context,ItemDetailActivity.class);
@@ -83,10 +81,8 @@ public class PeopleAdapter extends BaseAdapter {
                 intent.putExtra("name",name);
                 intent.putExtra("nickname",nickname);
                 activity.startActivityForResult(intent,0);
-
             }
         });
-
         return convertView;
     }
 }
