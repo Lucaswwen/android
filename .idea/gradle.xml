@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/anr" />
+            <option value="$PROJECT_DIR$/ap2" />
+            <option value="$PROJECT_DIR$/ap3" />
+            <option value="$PROJECT_DIR$/ap4" />
+            <option value="$PROJECT_DIR$/ap5" />
+            <option value="$PROJECT_DIR$/ap6" />
+            <option value="$PROJECT_DIR$/ap7" />
+            <option value="$PROJECT_DIR$/ap8" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app3" />
+            <option value="$PROJECT_DIR$/asynctask" />
+            <option value="$PROJECT_DIR$/event" />
+            <option value="$PROJECT_DIR$/handler" />
+            <option value="$PROJECT_DIR$/menu" />
+            <option value="$PROJECT_DIR$/pp99" />
+            <option value="$PROJECT_DIR$/taobao" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

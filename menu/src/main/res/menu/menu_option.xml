@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionmenu_item_1"
+    android:title="选项一"></item>
+    <item android:id="@+id/optionmenu_item_2"
+        android:title="选项二"></item>
+    <item android:id="@+id/optionmenu_item_3"
+        android:title="子菜单">
+        <menu>
+            <item
+                android:id="@+id/optionmenu_subitem_1"
+                android:title="子菜单选项一"></item>
+            <item
+                android:id="@+id/optionmenu_subitem_2"
+                android:title="子菜单选项二"></item>
+        </menu>
+    </item>
+</menu>

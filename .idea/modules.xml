@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/anr/anr.iml" filepath="$PROJECT_DIR$/anr/anr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap2/ap2.iml" filepath="$PROJECT_DIR$/ap2/ap2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap3/ap3.iml" filepath="$PROJECT_DIR$/ap3/ap3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap4/ap4.iml" filepath="$PROJECT_DIR$/ap4/ap4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap5/ap5.iml" filepath="$PROJECT_DIR$/ap5/ap5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap6/ap6.iml" filepath="$PROJECT_DIR$/ap6/ap6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap7/ap7.iml" filepath="$PROJECT_DIR$/ap7/ap7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap8/ap8.iml" filepath="$PROJECT_DIR$/ap8/ap8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app3/app3.iml" filepath="$PROJECT_DIR$/app3/app3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asynctask/asynctask.iml" filepath="$PROJECT_DIR$/asynctask/asynctask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event/event.iml" filepath="$PROJECT_DIR$/event/event.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handler/handler.iml" filepath="$PROJECT_DIR$/handler/handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menu/menu.iml" filepath="$PROJECT_DIR$/menu/menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pp99/pp99.iml" filepath="$PROJECT_DIR$/pp99/pp99.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taobao/taobao.iml" filepath="$PROJECT_DIR$/taobao/taobao.iml" />
+    </modules>
+  </component>
+</project>

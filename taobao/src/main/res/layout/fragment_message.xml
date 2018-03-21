@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/shape_gradient"
+        android:gravity="center">
+        <View
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:layout_weight="0.65"
+            android:text="消息(7)"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <ImageView
+            android:adjustViewBounds="true"
+            android:src="@drawable/tainjia"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="23dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="49dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#ffffff"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/jiaoyiwuliu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:textColor="#686868" />
+
+                    <Button
+                        android:id="@+id/tongzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:textColor="#686868" />
+
+                    <Button
+                        android:id="@+id/hudong"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:textColor="#686868" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.taobao.view.MessageListView
+                        android:id="@+id/lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:divider="#eeeeee">
+                    </com.example.taobao.view.MessageListView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

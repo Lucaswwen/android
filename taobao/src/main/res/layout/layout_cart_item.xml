@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <!--店铺名称-->
+    <RelativeLayout
+        android:background="@drawable/cart_jiesuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1.7"
+                android:padding="7dp"
+                android:id="@+id/dianpu_xuan"
+                android:src="@drawable/xuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/dianpuleibie"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/cart_03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dianpu_name"
+                    android:text="绮秀芬旗舰店"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arrow_expend_right"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="领券"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!--商品名称-->
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--选择按钮-->
+        <ImageView
+            android:background="#ffffff"
+            android:layout_weight="1.2"
+            android:padding="7dp"
+            android:id="@+id/xuan_shangpin"
+            android:src="@drawable/xuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <!--商品详情-->
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/shangpin_image"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="top"
+                    android:layout_weight="3"
+                    android:src="@drawable/cart_07"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:paddingTop="7dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/shangpin_name"
+                        android:textColor="#3f4447"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="春秋季男士睡衣纯棉长袖卡通青年薄款夏季全棉学生休闲家居服套装"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/xiangqing"
+                            android:textSize="12dp"
+                            android:padding="5dp"
+                            android:lineSpacingExtra="3dp"
+                            android:background="@drawable/cart_xiangqing"
+                            android:textColor="#9b9b9b"
+                            android:text="16171男;[标准码XL]建议身高175CM左右,体重130-155斤"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<ImageView-->
+                            <!--android:adjustViewBounds="true"-->
+                            <!--android:src="@drawable/huichang_elevator_pulldown"-->
+                            <!--android:layout_width="10dp"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/jiage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥79"
+                            android:layout_centerVertical="true"
+                            android:textColor="#ff5906"
+                            android:textSize="14dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/yuanjia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/jiage"
+                            android:text="￥128"
+                            android:textColor="#999999"
+                            android:textSize="11dp"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="top">
+
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/cart_anniu_jian"
+                                android:text="-"
+                                android:textColor="#999999" />
+
+                            <EditText
+                                android:layout_width="35dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/cart_shuliang"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="#999999"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/cart_anniu_plus"
+                                android:text="+"
+                                android:textColor="#999999" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--优惠信息-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:text="本店活动"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:text="部分商品满158减20"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

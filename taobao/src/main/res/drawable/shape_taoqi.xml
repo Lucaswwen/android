@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="180"
+        android:endColor="#ffcb1f"
+        android:startColor="#ff9818" />
+    <!-- 设置四个圆角的半径 -->
+    <corners
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="2dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="2dp" />
+    <!-- 设置一下边距,让空间大一点 -->
+
+    <padding
+        android:top="1dp"
+        android:left="3dp"
+        android:bottom="1dp"
+        android:right="3dp" />
+</shape>
