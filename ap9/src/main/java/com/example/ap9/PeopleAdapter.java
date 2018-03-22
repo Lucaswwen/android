@@ -1,5 +1,4 @@
 package com.example.ap9;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-
 import java.util.List;
 import java.util.Map;
 
@@ -23,7 +21,7 @@ public class PeopleAdapter extends BaseAdapter {
     private List<Map<String,Object>> data;
     private Context context;
     private int item_layout_id;
-    Map<String,Object> map;
+
 
     public PeopleAdapter(Activity activity,Context context,int item_layout_id,List<Map<String,Object>> data){
         this.context = context;
@@ -48,41 +46,42 @@ public class PeopleAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         if (convertView==null){
             LayoutInflater mInflater = LayoutInflater.from(parent.getContext());
             convertView = mInflater.inflate(item_layout_id,parent,false);
         }
         TextView name = convertView.findViewById(R.id.name);
         TextView nickname = convertView.findViewById(R.id.nickname);
-        TextView id = convertView.findViewById(R.id.id);
         Button button = convertView.findViewById(R.id.update);
-        map =  data.get(position);
+        Map<String,Object> map =  data.get(position);
+
         String nameStr =  map.get("name").toString();
         String nicknameStr = map.get("nickname").toString();
-        int idI = (int)map.get("id");
+
         name.setText(nameStr);
         nickname.setText(nicknameStr);
-        id.setText(idI+"");
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //发送请求
-                Intent intent = new Intent();
-                intent.setClass(PeopleAdapter.this.context,ItemDetailActivity.class);
-                //放入数据
-                TextView tvid = ((View)v.getParent()).findViewById(R.id.id);
-                int id = Integer.parseInt(tvid.getText().toString());
-                TextView tvname = ((View)v.getParent()).findViewById(R.id.name);
-                String name = tvname.getText().toString();
-                TextView tvnickname = ((View)v.getParent()).findViewById(R.id.nickname);
-                String nickname = tvnickname.getText().toString();
-                intent.putExtra("id",id);
-                intent.putExtra("name",name);
-                intent.putExtra("nickname",nickname);
-                activity.startActivityForResult(intent,0);
-            }
-        });
+
+        button.setOnClickListener(new EditButtonListener(map,position));
         return convertView;
+    }
+
+    private class EditButtonListener implements View.OnClickListener {
+        private Map<String, Object> map;
+        private int position;
+
+        public EditButtonListener(Map<String, Object> map,int position) {
+            this.map = map;
+            this.position = position;
+        }
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent();
+            intent.setClass(PeopleAdapter.this.context,ItemDetailActivity.class);
+            intent.putExtra("name", map.get("name").toString());
+            intent.putExtra("nickname", map.get("nickname").toString());
+            intent.putExtra("position", position);
+            activity.startActivityForResult(intent, 0);
+        }
     }
 }

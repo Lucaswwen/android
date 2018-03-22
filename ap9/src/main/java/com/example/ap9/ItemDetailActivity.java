@@ -16,23 +16,21 @@ public class ItemDetailActivity extends Activity{
 
     TextView tvname;
     TextView tvnickname;
-    int id;
+    Intent intent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_detail_activity);
-        Intent intent = getIntent();
+        intent = getIntent();
         String name = intent.getStringExtra("name");
         String nickname = intent.getStringExtra("nickname");
-        id = intent.getIntExtra("id",0);
 
         tvname = findViewById(R.id.name);
         tvnickname = findViewById(R.id.nickname);
 
         tvname.setText(name);
         tvnickname.setText(nickname);
-
 
         Button cancel = findViewById(R.id.cancel);
         Button queding = findViewById(R.id.quding);
@@ -49,9 +47,9 @@ public class ItemDetailActivity extends Activity{
                 String namenew = tvname.getText().toString();
                 String nicknamenew = tvnickname.getText().toString();
                 Intent intentRtn = new Intent();
-                intentRtn.putExtra("id",id);
                 intentRtn.putExtra("name",namenew);
                 intentRtn.putExtra("nickname",nicknamenew);
+                intentRtn.putExtra("position",intent.getIntExtra("position",0));
                 setResult(RESULT_OK,intentRtn);//负责设置result
                 finish();//这个才是负责关闭当前activity
             }

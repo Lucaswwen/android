@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/anr" />
+            <option value="$PROJECT_DIR$/ap10" />
             <option value="$PROJECT_DIR$/ap2" />
             <option value="$PROJECT_DIR$/ap3" />
             <option value="$PROJECT_DIR$/ap4" />
