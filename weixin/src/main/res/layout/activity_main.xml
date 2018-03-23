@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/tittle"
+        android:background="#393a3f"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:src="@drawable/w_03"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <View
+            android:id="@+id/fengefu"
+            android:layout_toRightOf="@id/back"
+            android:background="#2e2e32"
+            android:layout_centerVertical="true"
+            android:layout_width="0.8dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fengefu"
+            android:text="订阅号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/w_05"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

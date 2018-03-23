@@ -23,9 +23,11 @@
             <option value="$PROJECT_DIR$/asynctask" />
             <option value="$PROJECT_DIR$/event" />
             <option value="$PROJECT_DIR$/handler" />
+            <option value="$PROJECT_DIR$/intent2" />
             <option value="$PROJECT_DIR$/menu" />
             <option value="$PROJECT_DIR$/pp99" />
             <option value="$PROJECT_DIR$/taobao" />
+            <option value="$PROJECT_DIR$/weixin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

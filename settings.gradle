@@ -1,1 +1,1 @@
-include ':app', ':ap2', ':app3', ':ap3', ':ap4', ':ap5', ':ap6', ':ap7', ':menu', ':pp99', ':event', ':taobao', ':anr', ':handler', ':asynctask', ':ap8', ':ap9', ':ap10'
+include ':app', ':ap2', ':app3', ':ap3', ':ap4', ':ap5', ':ap6', ':ap7', ':menu', ':pp99', ':event', ':taobao', ':anr', ':handler', ':asynctask', ':ap8', ':ap9', ':ap10', ':weixin', ':intent2'
