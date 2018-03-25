@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/tittle"
+        android:background="#393a3f"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:src="@drawable/w_03"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <View
+            android:id="@+id/fengefu"
+            android:layout_toRightOf="@id/back"
+            android:background="#2e2e32"
+            android:layout_centerVertical="true"
+            android:layout_width="0.8dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fengefu"
+            android:text="QQ音乐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ziliao"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginBottom="49dp"
+        android:layout_marginTop="49dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/listmessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/menu_button_bg"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <ImageButton
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jianpanbg"
+            android:background="@drawable/menu_button_bg"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/caidan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

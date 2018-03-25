@@ -8,7 +8,7 @@
         android:id="@+id/tittle"
         android:background="#393a3f"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="49dp">
         <ImageView
             android:adjustViewBounds="true"
             android:id="@+id/back"
@@ -38,12 +38,15 @@
             android:layout_alignParentRight="true"
             android:src="@drawable/w_05"
             android:layout_width="wrap_content"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"/>
     </RelativeLayout>
     <ListView
+        android:descendantFocusability="beforeDescendants"
+        android:listSelector="@drawable/course_list_selector"
+        android:divider="#dedede"
+        android:dividerHeight="0.1dp"
         android:id="@+id/lv"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </ListView>
 </LinearLayout>

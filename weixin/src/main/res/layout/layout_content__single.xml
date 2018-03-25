@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/qqyinyue7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/wenzi"
+        android:text="世界上赚钱第二多的音乐人|音乐史上的今天"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/zhaiyao"
+        android:text="12亿美金，好像够我玩儿好几辈子了"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
