@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        style="@style/textview_style"
+        android:text="鹅鹅鹅" />
+
+    <TextView
+        style="@style/textview_style"
+        android:text="曲项向天歌" />
+    <TextView
+        style="@style/textview_style"
+        android:text="白毛浮绿水,红掌拨清波" />
+    <TextView
+        android:background="@drawable/my_layerlist"
+        android:layout_width="200dp"
+        android:layout_height="60dp" />
+    <Button
+        android:background="@drawable/my_statelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_color_state"/>
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.weixin.util.Dp2px;
 
@@ -54,16 +55,26 @@ public class ContentItemAdapter extends BaseAdapter {
             LayoutInflater mInflater = LayoutInflater.from(parent.getContext());
             convertView = mInflater.inflate(item_layout_id,parent,false);
         }
+        TextView tv = convertView.findViewById(R.id.time);
         for (int i = 0; i < list.get(position).size(); i++) {
             View view = list.get(position).get(i);
+            TextView messageTime = view.findViewById(R.id.time);
+            String time = messageTime.getText().toString();
+            tv.setText(time);
             ((LinearLayout)convertView).addView(view);
             if (list.get(position).size()==1){
                 view.getLayoutParams().height= Dp2px.dip2px(context,200);
             }else {
                 if (i==0){
-                    view.getLayoutParams().height= Dp2px.dip2px(context,200);
+                    view.getLayoutParams().height= Dp2px.dip2px(context,184);
                 }else{
-                    view.getLayoutParams().height= Dp2px.dip2px(context,80);
+                    view.getLayoutParams().height= Dp2px.dip2px(context,73);
+                    if (i==list.get(position).size()-1){
+                        View singline = view.findViewById(R.id.singleline);
+                        singline.setVisibility(View.INVISIBLE);
+                        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) ((LinearLayout)view).getLayoutParams();
+                        layoutParams.setMargins(0,0,0,Dp2px.dip2px(context,13));
+                    }
                 }
             }
         }

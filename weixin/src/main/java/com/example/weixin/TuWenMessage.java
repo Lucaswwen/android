@@ -6,15 +6,17 @@ package com.example.weixin;
 
 public class TuWenMessage {
 
-    public TuWenMessage(int imageResourse, String wenzi, String zhaiyao) {
+    public TuWenMessage(int imageResourse, String wenzi, String zhaiyao,String time) {
         this.imageResourse = imageResourse;
         this.wenzi = wenzi;
         this.zhaiyao = zhaiyao;
+        this.time = time;
     }
 
     private int imageResourse;
     private String wenzi;
     private String zhaiyao;
+    private String time;
 
     public void setImageResourse(int imageResourse) {
         this.imageResourse = imageResourse;
@@ -38,5 +40,13 @@ public class TuWenMessage {
 
     public String getZhaiyao() {
         return zhaiyao;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }

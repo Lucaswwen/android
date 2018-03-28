@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <ImageView
+        android:adjustViewBounds="true"
         android:id="@+id/image"
         android:src="@drawable/qqyinyue7"
         android:layout_width="match_parent"
@@ -18,4 +19,9 @@
         android:text="12亿美金，好像够我玩儿好几辈子了"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/time"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
 </LinearLayout>

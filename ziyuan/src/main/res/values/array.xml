@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_name">
+        <item>张飞</item>
+        <item>关羽</item>
+        <item>赵云</item>
+        <item>黄忠</item>
+        <item>马超</item>
+    </string-array>
+    <integer-array name="user_wuli">
+        <item>95</item>
+        <item>99</item>
+        <item>97</item>
+        <item>98</item>
+        <item>98</item>
+    </integer-array>
+</resources>

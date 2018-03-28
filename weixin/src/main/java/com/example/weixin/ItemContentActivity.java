@@ -86,9 +86,12 @@ public class ItemContentActivity extends Activity{
         ImageView iv = view.findViewById(R.id.image);
         TextView wenzi = view.findViewById(R.id.wenzi);
         TextView zhaiyao = view.findViewById(R.id.zhaiyao);
+        TextView time = view.findViewById(R.id.time);
         iv.setImageResource(tuWenMessage.getImageResourse());
         wenzi.setText(tuWenMessage.getWenzi());
         zhaiyao.setText(tuWenMessage.getZhaiyao());
+        time.setText(tuWenMessage.getTime());
         return view;
     }
+
 }
