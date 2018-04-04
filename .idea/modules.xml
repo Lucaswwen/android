@@ -15,14 +15,18 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app3/app3.iml" filepath="$PROJECT_DIR$/app3/app3.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctask/asynctask.iml" filepath="$PROJECT_DIR$/asynctask/asynctask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conteact/conteact.iml" filepath="$PROJECT_DIR$/conteact/conteact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db/db.iml" filepath="$PROJECT_DIR$/db/db.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/donghua/donghua.iml" filepath="$PROJECT_DIR$/donghua/donghua.iml" />
       <module fileurl="file://$PROJECT_DIR$/event/event.iml" filepath="$PROJECT_DIR$/event/event.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file/file.iml" filepath="$PROJECT_DIR$/file/file.iml" />
       <module fileurl="file://$PROJECT_DIR$/handler/handler.iml" filepath="$PROJECT_DIR$/handler/handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/intent2/intent2.iml" filepath="$PROJECT_DIR$/intent2/intent2.iml" />
       <module fileurl="file://$PROJECT_DIR$/menu/menu.iml" filepath="$PROJECT_DIR$/menu/menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/pp99/pp99.iml" filepath="$PROJECT_DIR$/pp99/pp99.iml" />
       <module fileurl="file://$PROJECT_DIR$/taobao/taobao.iml" filepath="$PROJECT_DIR$/taobao/taobao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/weixin/weixin.iml" filepath="$PROJECT_DIR$/weixin/weixin.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziyuan/ziyuan.iml" filepath="$PROJECT_DIR$/ziyuan/ziyuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziyuan2/ziyuan2.iml" filepath="$PROJECT_DIR$/ziyuan2/ziyuan2.iml" />

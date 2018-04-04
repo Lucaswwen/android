@@ -73,16 +73,12 @@
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/caidan"
             android:layout_weight="7"
             android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:id="@+id/caidan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

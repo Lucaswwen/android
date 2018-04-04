@@ -63,7 +63,9 @@ public class ContentItemAdapter extends BaseAdapter {
             tv.setText(time);
             ((LinearLayout)convertView).addView(view);
             if (list.get(position).size()==1){
-                view.getLayoutParams().height= Dp2px.dip2px(context,200);
+                view.getLayoutParams().height= LinearLayout.LayoutParams.WRAP_CONTENT;
+                LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) ((LinearLayout)view).getLayoutParams();
+                layoutParams.setMargins(0,0,0,Dp2px.dip2px(context,13));
             }else {
                 if (i==0){
                     view.getLayoutParams().height= Dp2px.dip2px(context,184);

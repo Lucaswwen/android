@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <!-- 设置透明背景色 -->
-    <solid android:color="#f5f5f5" />
-
-    <!-- 设置一个黑色边框 -->
-    <stroke
-        android:width="0.5dp"
-        android:color="#d9d9d9" />
-    <!-- 设置四个圆角的半径 -->
-    <corners
-        android:bottomLeftRadius="0dp"
-        android:bottomRightRadius="0dp"
-        android:topLeftRadius="0dp"
-        android:topRightRadius="0dp" />
-    <!-- 设置一下边距,让空间大一点 -->
-
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!--    边框颜色    -->
+            <solid android:color="#d6d6d6"/>
+        </shape>
+    </item>
+    <item android:top="0.6dp" android:bottom="0.6dp" android:right="0.6dp">
+        <shape>
+            <!--    边框里面的颜色    -->
+            <solid android:color="#f5f5f5"/>
+        </shape>
+    </item>
+</layer-list>

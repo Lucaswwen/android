@@ -65,22 +65,16 @@ public class Data {
         List<TuWenMessage> listMessage1 = new ArrayList();
         TuWenMessage tuWenMessage1;
 
-        tuWenMessage1 = new TuWenMessage(R.drawable.qqmusic1_1,"张杰/侯明昊：“老干部”与“佛系”鼻祖的二三事",null,"下午1:01");
-        listMessage1.add(tuWenMessage1);
-        tuWenMessage1 = new TuWenMessage(R.drawable.qqmusic1_2,"什么？你洗澡时竟然不听歌？！",null,"下午1:01");
-        listMessage1.add(tuWenMessage1);
-        tuWenMessage1 = new TuWenMessage(R.drawable.qqmusic1_3,"The Beatles来了！28张专辑重磅登陆",null,"下午1:01");
+        tuWenMessage1 = new TuWenMessage(R.drawable.fuli,"速领！3月底一单免费骑！","重要通知","3月13日 下午17:45");
         listMessage1.add(tuWenMessage1);
         listView.add(listMessage1);
 
         List<TuWenMessage> listMessage2 = new ArrayList();
         TuWenMessage tuWenMessage2;
 
-        tuWenMessage2 = new TuWenMessage(R.drawable.qqmusic1_1,"张杰/侯明昊：“老干部”与“佛系”鼻祖的二三事",null,"下午1:01");
+        tuWenMessage2 = new TuWenMessage(R.drawable.rongzi,null,null,"3月14日 早上08:59");
         listMessage2.add(tuWenMessage2);
-        tuWenMessage2 = new TuWenMessage(R.drawable.qqmusic1_2,"什么？你洗澡时竟然不听歌？！",null,"下午1:01");
-        listMessage2.add(tuWenMessage2);
-        tuWenMessage2 = new TuWenMessage(R.drawable.qqmusic1_3,"The Beatles来了！28张专辑重磅登陆",null,"下午1:01");
+        tuWenMessage2 = new TuWenMessage(R.drawable.ofo,"ofo信用免押金一周年，累计免押金额超40亿元",null,"下午1:01");
         listMessage2.add(tuWenMessage2);
         listView.add(listMessage2);
 
